@@ -9,13 +9,39 @@ body {
   align-items: center;
   width: 100vw;
   height: 100vh;
-  background-color: black;
+  background-image: url('./assets/bck.jpg');
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
 }
 
-.box {
-  width: 60px;
-  height: 60px;
-  background-color: blue;
-  margin-right: 3px;
-  margin-bottom: 3px;
+.outer-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 1225px;
+  min-height: 694px;
+  background-color: beige;
+}
+
+.inner-box {
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 986px;
+  height: 533px;
+  background-color: rgb(117, 117, 100);
+}
+
+.header {
+  width: 100%;
+  height: 80px;
+  background-color: blueviolet;
+}
+
+.dashboard-container {
+  width: 960px;
+  height: 453px;
+  background-color: rgb(154, 192, 192);
 }
